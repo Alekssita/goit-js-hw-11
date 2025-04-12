@@ -11,69 +11,91 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f9f9f9;
+  color: #333;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px; 
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
+/* === Пошукова форма === */
 .form {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
 .form input {
   flex: 1;
-  padding: 10px;
+  max-width: 400px;
+  padding: 12px 16px;
   font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 .form button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 16px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Gallery */
+.form button:hover {
+  background-color: #4338ca;
+}
+
+/* === Галерея === */
 .gallery {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
   padding: 0;
   margin: 0;
 }
 
 .gallery-item {
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
 }
 
 .gallery-item img {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .info {
-  padding: 10px;
+  padding: 12px 16px;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 8px;
 }
 
-/* Loader */
+/* === Лоадер === */
 .loader {
   display: none;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .loader.visible {
@@ -84,7 +106,7 @@ body {
   width: 12px;
   height: 12px;
   margin: 3px;
-  background-color: #3498db;
+  background-color: #6366f1;
   border-radius: 100%;
   animation: ball-pulse 0.75s infinite ease-in-out;
 }
@@ -105,4 +127,3 @@ body {
     transform: scale(1);
   }
 }
-
