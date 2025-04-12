@@ -38,5 +38,6 @@ form.addEventListener('submit', (e) => {
     })
     .finally(() => {
       hideLoader();
+      input.value = '';
     });
 });
