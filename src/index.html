@@ -5,13 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Image Search App</title>
 
-  <!-- SimpleLightbox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css" />
-
-  <!-- iziToast -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css" />
-
-  <!-- Custom styles -->
   <link rel="stylesheet" href="./src/css/styles.css" />
 </head>
 <body>
@@ -23,10 +18,12 @@
       <button type="submit">Search</button>
     </form>
 
-    <!-- Loader -->
-    <div class="loader"></div>
+    <div class="loader loader-pulse">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-    <!-- Gallery -->
     <ul class="gallery"></ul>
   </div>
 

@@ -2,7 +2,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const galleryContainer = document.querySelector('.gallery');
-const loader = document.querySelector('.loader'); // не забудь додати цей елемент у HTML
+const loader = document.querySelector('.loader');
 
 const lightbox = new SimpleLightbox('.gallery a');
 

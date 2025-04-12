@@ -23,7 +23,10 @@ form.addEventListener('submit', async (e) => {
     const images = data.hits;
 
     if (images.length === 0) {
-      iziToast.info({ message: 'Sorry, there are no images matching your search query. Please try again!', position: 'topRight' });
+      iziToast.info({
+        message: 'Sorry, there are no images matching your search query. Please try again!',
+        position: 'topRight',
+      });
       return;
     }
 
