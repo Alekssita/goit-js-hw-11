@@ -33,7 +33,7 @@ form.addEventListener('submit', (e) => {
       createGallery(images);
     })
     .catch((error) => {
-      iziToast.error({ message: 'Something went wrong. Please try again later.', position: 'topRight' });
+      iziToast.error({ message: 'Network error. Please try again later.', position: 'topRight' });
       console.error(error);
     })
     .finally(() => {
